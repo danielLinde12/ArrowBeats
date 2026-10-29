@@ -13,18 +13,18 @@ frameRate(60);
 5 = Gameplay Level 3
 */
 
-var a = new Audio("https://daniellinde12.github.io/finalproject/The%20Grand%20Affair%20-%20Coupe%20%20NO%20COPYRIGHT%208-bit%20Music%20(2).mp3")
-var b = new Audio("https://daniellinde12.github.io/finalproject/Krayzius%20&%20Brainstorm%20-%20Virtual%20Boy%20%20NO%20COPYRIGHT%208-bit%20Music.mp3")
-var c = new Audio("https://daniellinde12.github.io/finalproject/Jeremy%20Blake%20-%20Powerup!%20%20NO%20COPYRIGHT%208-bit%20Music.mp3")
-var d = new Audio("https://daniellinde12.github.io/finalproject/Kubbi%20-%20Digestive%20biscuit%20%20NO%20COPYRIGHT%208-bit%20Music.mp3")
+var a = new Audio("https://daniellinde12.github.io/ArrowBeats/The%20Grand%20Affair%20-%20Coupe%20%20NO%20COPYRIGHT%208-bit%20Music%20(2).mp3")
+var b = new Audio("https://daniellinde12.github.io/ArrowBeats/Krayzius%20&%20Brainstorm%20-%20Virtual%20Boy%20%20NO%20COPYRIGHT%208-bit%20Music.mp3")
+var c = new Audio("https://daniellinde12.github.io/ArrowBeats/Jeremy%20Blake%20-%20Powerup!%20%20NO%20COPYRIGHT%208-bit%20Music.mp3")
+var d = new Audio("https://daniellinde12.github.io/ArrowBeats/Kubbi%20-%20Digestive%20biscuit%20%20NO%20COPYRIGHT%208-bit%20Music.mp3")
 var hasBPlayed = false
 var hasCPlayed = false
 var hasDPlayed = false
 
-var helpScreenBG = getImage("https://daniellinde12.github.io/finalproject/night-in-old-town-chill-lo-fi-background-residential-buildings-2d-cartoon-cityscape-illustration-purple-lofi-wallpaper-desktop-sunset-aesthetic-90s-retro-art-dreamy-vibes-vector.jpg ")
-var levelSelectBG = getImage("https://daniellinde12.github.io/finalproject/urban-storefront-at-night-lo-fi-aesthetic-wallpaper-exterior-store-with-tables-vending-machine-2d-cartoon-cityscape-illustration-purple-lofi-background-90s-retro-album-art-chill-vibes-vector.jpg")
-var startScreenBG = getImage("https://daniellinde12.github.io/finalproject/observation-desk-chill-lo-fi-background-open-terrace-looking-on-view-buildings-2d-cartoon-cityscape-illustration-purple-lofi-wallpaper-desktop-sunset-aesthetic-90s-retro-art-dreamy-vibes-vector.jpg")
-var LevelBG = getImage("https://daniellinde12.github.io/finalproject/night-waterfront-with-streetlights-lo-fi-aesthetic-wallpaper-nighttime-city-quay-glowing-lampposts-2d-cartoon-cityscape-illustration-purple-lofi-background-90s-retro-album-art-chill-vibes-vector.jpg")
+var helpScreenBG = getImage("https://daniellinde12.github.io/ArrowBeats/night-in-old-town-chill-lo-fi-background-residential-buildings-2d-cartoon-cityscape-illustration-purple-lofi-wallpaper-desktop-sunset-aesthetic-90s-retro-art-dreamy-vibes-vector.jpg ")
+var levelSelectBG = getImage("https://daniellinde12.github.io/ArrowBeats/urban-storefront-at-night-lo-fi-aesthetic-wallpaper-exterior-store-with-tables-vending-machine-2d-cartoon-cityscape-illustration-purple-lofi-background-90s-retro-album-art-chill-vibes-vector.jpg")
+var startScreenBG = getImage("https://daniellinde12.github.io/ArrowBeats/observation-desk-chill-lo-fi-background-open-terrace-looking-on-view-buildings-2d-cartoon-cityscape-illustration-purple-lofi-wallpaper-desktop-sunset-aesthetic-90s-retro-art-dreamy-vibes-vector.jpg")
+var LevelBG = getImage("https://daniellinde12.github.io/ArrowBeats/night-waterfront-with-streetlights-lo-fi-aesthetic-wallpaper-nighttime-city-quay-glowing-lampposts-2d-cartoon-cityscape-illustration-purple-lofi-background-90s-retro-album-art-chill-vibes-vector.jpg")
 
 var leftArrowColor = [255, 255, 255];
 var upArrowColor = [255, 255, 255];
