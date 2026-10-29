@@ -4,12 +4,11 @@ A rhythm game built in Processing.js. Arrows scroll toward a row of targets in t
 
 **Award:** Excellence in Academic Achievement, Cyber Security Summit 2025
 
-![ArrowBeats gameplay](<img width="917" height="925" alt="ArrowBeatsSC1" src="https://github.com/user-attachments/assets/4acf2229-43bf-428d-af55-d62246b3dc1f" />
-)
+<img width="450" alt="ArrowBeats gameplay" src="https://github.com/user-attachments/assets/4acf2229-43bf-428d-af55-d62246b3dc1f" />
 
 ## Play it
 
-▶️ **[Play ArrowBeats here](PASTE-LINK-HERE)**
+▶️ **[Play ArrowBeats here](https://daniellinde12.github.io/ArrowBeats/)**
 
 ## How to play
 
@@ -41,7 +40,7 @@ Each level gives you less room for error than the one before.
 
 ## Built with
 
-- Processing.js (JavaScript)
+- Processing.js (JavaScript), run in the browser by `index.html`
 - Lo-fi cityscape backgrounds and royalty-free 8-bit music, loaded through GitHub Pages
 
 ## Team

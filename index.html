@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ArrowBeats</title>
+  <style>
+    body { margin: 0; min-height: 100vh; display: flex; flex-direction: column;
+           align-items: center; justify-content: center; background: #1b1430;
+           color: #eee; font-family: system-ui, sans-serif; }
+    canvas { outline: none; box-shadow: 0 0 30px rgba(160, 110, 255, .5); }
+    p { opacity: .7; font-size: 14px; }
+  </style>
+  <script src="processing.min.js"></script>
+</head>
+<body>
+  <canvas id="game" tabindex="0"></canvas>
+  <p>Click the game, then use W A S D to hit the arrows.</p>
+  <script>
+  // Runs ArrowBeats.js the way the class editor did (Khan Academy-style Processing.js).
+  fetch("ArrowBeats.js").then(function (r) { return r.text(); }).then(function (code) {
+    var sketch = new Function("processing", "with (processing) {\n" + code + "\n}");
+    var canvas = document.getElementById("game");
+    new Processing(canvas, function (p) {
+      p.size(400, 400);
+      p.angleMode = "degrees";
+
+      // getImage("https://.../file.jpg") -> load the same file from this folder
+      p.getImage = function (url) {
+        var file = decodeURIComponent(url.trim().split("/").pop());
+        return p.loadImage(file);
+      };
+
+      // frameRate() with no argument returns the current rate
+      var setFrameRate = p.frameRate;
+      p.frameRate = function (rate) {
+        if (rate === undefined) { return p.__frameRate || 60; }
+        return setFrameRate(rate);
+      };
+
+      p.textFont(p.createFont("sans-serif", 12));
+      sketch(p);
+
+      // Let the game compare keys as plain letters, e.g. key === 'a'
+      ["keyPressed", "keyReleased"].forEach(function (name) {
+        var handler = p[name];
+        p[name] = function () {
+          var k = p.key;
+          if (k && typeof k === "object" && k.code !== undefined) {
+            p.key = String.fromCharCode(k.code).toLowerCase();
+          }
+          if (typeof handler === "function") { handler(); }
+        };
+      });
+    });
+    canvas.focus();
+  });
+  </script>
+</body>
+</html>
